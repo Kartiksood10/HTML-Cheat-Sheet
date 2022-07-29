@@ -1,0 +1,164 @@
+<!--html+tab to get basic body of html by default-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>HTML Cheat Sheet</title>
+</head>
+<body>
+
+	<a href="blog.html">Go to Blog</a>
+	<hr>
+	<!--Headings -->
+
+	<h1>Heading One</h1>
+	<h2>Heading Two</h2>
+
+	<!--Paragraphs-->
+
+	<p>
+		<!--lorem+tab is used to generate random text-->
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor <strong>incididunt ut labore</strong> et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute <em>irure dolor</em> in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<p>
+		<!-- target blank opens the link in a new tab, href creates a link where you want to take the user-->
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="http://google.com" target="_blank">sed do eiusmod</a>
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<!--Lists, ul is Unordered and ol is ordered-->
+
+	<ul>
+		<li>List 1</li>
+		<li>List 2</li>
+		<li>List 3</li>
+		<li>List 4</li>
+	</ul>
+
+	<ol>
+		<li>List One</li>
+		<li>List Two</li>
+		<li>List Three</li>
+		<li>List Four</li>
+	</ol>
+
+	<!--Table-->
+    <!--tr is table row, th is table heading, td is table data-->
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Age</th>
+			</tr>
+			
+		</thead>
+		<tbody>
+			<tr>
+				<td>Kartik</td>
+				<td>kar@hi.com</td>
+				<td>20</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br> <!--Line break-->
+    <hr> <!--creates a line for distinction-->
+    <br>
+
+	<!--Forms-->
+    <!--process.php could be a server where you send the data and POST is a method of sending that data-->
+    <!-- div is used to make divisions in your web page to segregate different items on the page-->
+
+	<form action="process.php" method="POST">
+		<div>
+			<label>First Name</label>
+			<input type="text" name="firstName" placeholder="Enter First Name">
+		</div>
+		<br>
+		<div>
+			<label>Last Name</label>
+			<input type="text" name="lastName">
+		</div>
+		<br>
+		<div>
+			<label>Email</label>
+			<input type="email" name="email"> <!--Type email throws error for wrong email address-->
+		</div>
+		<br>
+		<div>
+			<label>Message</label>
+			<textarea name="message"></textarea>
+		</div>
+		<br>
+		<div>
+			<label>Gender</label>
+			<select name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label>Age</label>
+			<input type="number" name="age" value="18">
+		</div>
+		<br>
+		<div>
+			<label>Birthday</label>
+			<input type="date" name="birthday">
+		</div>
+		<br>
+		<input type="submit" name="submit" value="Submit">
+		
+	</form>
+
+	<!--Button-->
+
+	<button>Click Me</button>
+
+	<br>
+
+	<!--Images-->
+
+	<a href="images/download.jpg">
+		
+		<img src="images/download.jpg" alt="Sample Image" width="200">
+		
+	</a>
+
+	<!--Quotations, elements that are quoted from another source-->
+
+	<blockquote cite="http://google.com"> <!--Does not show actual source cite on webpage but shows on inspection-->
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</blockquote>
+
+	<p>
+		<abbr title="Hypertext Markup Language">HTML</abbr> is cool
+	</p>
+	
+
+	<div style="margin-top: 500px"></div> <!-- we can scroll further down by increasing margin top-->
+
+
+</body>
+</html>
